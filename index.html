@@ -330,7 +330,7 @@
 
     /* Features Section */
     .features {
-      padding: 100px 2rem;
+      padding: 70px 1.4rem;
       background: var(--light-bg);
     }
 
@@ -342,7 +342,7 @@
 
     .feature-card {
       background: white;
-      padding: 2.5rem;
+      padding: 1.2rem;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       transition: all 0.3s;
@@ -356,14 +356,14 @@
     }
 
     .feature-icon {
-      width: 70px;
-      height: 70px;
+      width: 49px;
+      height: 49px;
       background: var(--gradient);
       border-radius: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2.2rem;
+      font-size: 1.54rem;
       margin-bottom: 1.5rem;
       transition: transform 0.3s;
     }
@@ -399,7 +399,7 @@
 
     .data-category {
       background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-      padding: 2.5rem;
+      padding: 1.2rem;
       border-radius: 20px;
       border-left: 5px solid var(--primary);
       transition: all 0.3s;
@@ -449,7 +449,7 @@
     }
 
     .data-category li {
-      padding: 0.7rem 0;
+      padding: 0.1rem 0;
       color: #555;
       display: flex;
       align-items: center;
@@ -497,14 +497,14 @@
     }
 
     .step-number {
-      width: 90px;
-      height: 90px;
+      width: 63px;
+      height: 63px;
       background: var(--gradient);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2.5rem;
+      font-size: 1.75rem;
       font-weight: 800;
       margin: 0 auto 1.5rem;
       box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
@@ -529,14 +529,14 @@
 
     .customization-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 3rem;
       margin-top: 3rem;
     }
 
     .custom-feature {
       background: white;
-      padding: 2.5rem;
+      padding: 1.2rem;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       transition: all 0.3s;
@@ -548,7 +548,7 @@
     }
 
     .custom-icon {
-      font-size: 3rem;
+      font-size: 2.2rem;
       margin-bottom: 1.5rem;
     }
 
@@ -564,7 +564,7 @@
     }
 
     .custom-feature li {
-      padding: 0.5rem 0;
+      padding: 0.25rem 0;
       color: #666;
       display: flex;
       align-items: start;
@@ -639,8 +639,9 @@
     }
 
     .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 3rem;
       margin-bottom: 3rem;
     }
@@ -656,7 +657,7 @@
     }
 
     .footer-section li {
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.4rem;
     }
 
     .footer-section a {
@@ -669,15 +670,21 @@
       color: var(--primary);
     }
 
+    .footer-about {
+      text-align: center;
+    }
+
     .footer-about p {
       color: #bbb;
       line-height: 1.8;
-      margin-bottom: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.8rem;
     }
 
     .social-links {
       display: flex;
       gap: 1rem;
+      justify-content: center;
     }
 
     .social-links a {
@@ -736,6 +743,7 @@
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         transition: left 0.3s;
         z-index: 999;
+        gap: 1rem;
       }
 
       nav ul.active {
@@ -746,6 +754,18 @@
         display: block;
       }
 
+      .nav-container {
+        padding: 0 1rem;
+      }
+
+      .logo {
+        font-size: 1.1rem;
+      }
+
+      .hero {
+        padding: 140px 1.5rem 80px;
+      }
+
       .hero h1 {
         font-size: 2.5rem;
       }
@@ -754,8 +774,54 @@
         font-size: 1.1rem;
       }
 
+      .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        padding: 1rem 2rem;
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+      }
+
+      .stats {
+        padding: 3rem 1.5rem;
+      }
+
+      .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+
+      .stat-item h3 {
+        font-size: 2.5rem;
+      }
+
+      .container {
+        padding: 0 1.5rem;
+      }
+
       .section-header h2 {
         font-size: 2rem;
+      }
+
+      .section-header p {
+        font-size: 1rem;
+      }
+
+      .features,
+      .data-types,
+      .how-it-works,
+      .customization {
+        padding: 42px 0.7rem;
+      }
+
+      .cta-section {
+        padding: 60px 1.5rem;
       }
 
       .cta-section h2 {
@@ -765,7 +831,153 @@
       .features-grid,
       .data-grid,
       .customization-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+
+      .feature-card,
+      .data-category,
+      .custom-feature {
+        padding: 1rem;
+      }
+
+      .steps-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .footer-content {
+        flex-direction: row;
+        gap: 2rem;
+        text-align: left;
+        justify-content: space-between;
+      }
+
+      .footer-links {
+        justify-content: flex-start;
+      }
+
+      .footer-section {
+        flex: 1;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+      }
+
+      .hero .subtitle {
+        font-size: 1rem;
+      }
+
+      .badges {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+      }
+
+      .badge {
+        flex: 0 1 calc(50% - 0.4rem);
+        min-width: 150px;
+        justify-content: center;
+      }
+
+      .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .section-header h2 {
+        font-size: 1.8rem;
+      }
+
+      .cta-section h2 {
+        font-size: 1.8rem;
+      }
+
+      .cta-section p {
+        font-size: 1rem;
+      }
+
+      .feature-icon,
+      .custom-icon {
+        font-size: 1.4rem;
+      }
+
+      .data-list li {
+        font-size: 0.95rem;
+      }
+
+      .step-number {
+        width: 49px;
+        height: 49px;
+        font-size: 1.4rem;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        padding: 0.9rem 1.5rem;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav-container {
+        padding: 0 0.8rem;
+      }
+
+      .logo {
+        font-size: 1rem;
+      }
+
+      .hero {
+        padding: 120px 1rem 60px;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+
+      .hero .subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+      }
+
+      .stats {
+        padding: 2rem 1rem;
+      }
+
+      .stat-item h3 {
+        font-size: 2rem;
+      }
+
+      .stat-item p {
+        font-size: 0.95rem;
+      }
+
+      .section-header h2 {
+        font-size: 1.5rem;
+      }
+
+      .cta-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .feature-card,
+      .data-category,
+      .custom-feature {
+        padding: 0.8rem;
+      }
+
+      .feature-card h3,
+      .custom-feature h3 {
+        font-size: 1.3rem;
+      }
+
+      .data-category h3 {
+        font-size: 1.4rem;
       }
     }
 
@@ -927,7 +1139,7 @@
         <div class="data-category">
           <h3>🔑 Identifiers</h3>
           <ul>
-            <li>UUID (RFC-compliant v4)</li>
+            <li>UUID</li>
             <li>Credit Card Numbers</li>
             <li>PAN Numbers (Indian)</li>
           </ul>
@@ -1088,50 +1300,20 @@
     <div class="footer-content">
       <div class="footer-grid">
         <div class="footer-section footer-about">
-          <h3>Test Data Generator</h3>
-          <p>A powerful Chrome extension for generating realistic test data instantly. Built with ❤️ for developers who value their time.</p>
+          <p>Built with ❤️ for those who value their time.</p>
           <div class="social-links">
             <a href="https://www.linkedin.com/in/sagar-bobade/" target="_blank" title="LinkedIn" aria-label="LinkedIn">in</a>
-            <a href="https://github.com/yourusername/test-data-generator" target="_blank" title="GitHub" aria-label="GitHub">
+            <a href="https://github.com/SagarBobade" target="_blank" title="GitHub" aria-label="GitHub">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
               </svg>
             </a>
           </div>
         </div>
-
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#data-types">Data Types</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#customization">Customization</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Resources</h3>
-          <ul>
-            <li><a href="https://chromewebstore.google.com/detail/cpeocgdgoopflcgmpohkcgnigkfhokdm" target="_blank">Chrome Web Store</a></li>
-            <li><a href="https://github.com/yourusername/test-data-generator" target="_blank">GitHub Repository</a></li>
-            <li><a href="README.md" target="_blank">Documentation</a></li>
-            <li><a href="https://github.com/yourusername/test-data-generator/issues" target="_blank">Report Issues</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Connect</h3>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/sagar-bobade/" target="_blank">LinkedIn Profile</a></li>
-            <li><a href="https://github.com/SagarBobade" target="_blank">Github Profile</a></li>
-            <li><a href="https://chromewebstore.google.com/detail/cpeocgdgoopflcgmpohkcgnigkfhokdm" target="_blank">Leave a Review</a></li>
-          </ul>
-        </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="current-year"></span> Test Data Generator by <a href="https://www.linkedin.com/in/sagar-bobade/" target="_blank" style="color: var(--primary);">Sagar Bobade</a>. All rights reserved.</p>
+        <p>&copy; <span id="current-year"></span> By <a href="https://www.linkedin.com/in/sagar-bobade/" target="_blank" style="color: var(--primary);">Sagar Bobade</a>. All rights reserved.</p>
         <p style="margin-top: 1rem;">⭐ If you find this helpful, please review on <a href="https://chromewebstore.google.com/detail/cpeocgdgoopflcgmpohkcgnigkfhokdm" target="_blank" style="color: var(--primary);">Chrome Web Store</a>!</p>
       </div>
     </div>
@@ -1172,9 +1354,20 @@
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        
+        // Scroll to top if href is just "#"
+        if (href === '#') {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+          return;
+        }
+        
+        const target = document.querySelector(href);
         if (target) {
-          const offsetTop = target.offsetTop - 80;
+          const offsetTop = target.offsetTop - 100;
           window.scrollTo({
             top: offsetTop,
             behavior: 'smooth'
